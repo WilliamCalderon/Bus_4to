@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Localizacion</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_pantalla__inicio">Pantalla_Inicio</string>
+    <string name="title_activity_registro">Registro</string>
+
+    <dimen name="tamanoletra">20sp</dimen>
+    <color name="colorbtRegistrar">#DDDDDD</color>
+    <color name="letraAzul1">#003366</color>
+    <color name="grisClaro">#EEEEEE</color>
+    <string name="title_activity_registro_bus">RegistroBus</string>
+    
+    <string name="tvBienvenida">Sr. Conductor Registrese por favor</string>
+    <string name="tvRuta">Ruta: </string>
+    <string name="tvPlacas">Numero de Placas:</string>
+    <string name="tvNombreConductor">Nombre del Conductor</string>
+    <string name="hintNombre">Nombre (s)</string>
+    <string name="hintApellidos">Apellidos (s)</string>
+    <string name="btFinalizar">Finalizar</string>
+    <string name="message">Ha seleccionado: </string>
+    
+	
+    <string-array name="Sentido">
+        <item>San Lazaro to Nativitas</item>
+        <item>Nativitas to San Lazaro</item>
+    </string-array>
+</resources>
