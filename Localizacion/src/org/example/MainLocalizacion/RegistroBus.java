@@ -17,13 +17,16 @@ import android.widget.AdapterView.OnItemSelectedListener;
 
 public class RegistroBus extends Activity implements OnItemSelectedListener{
     private String Ruta;
-    private String Placas;
+    private static String Placas;
     private String Nombre;
     private String Apellido;
 	private Button btFinalizar; 
     private Spinner spSentido;
     private EditText etPlacas, etNombre, etApellido;
     
+    public static String getPlacas(){
+    	return Placas;
+    }
     
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

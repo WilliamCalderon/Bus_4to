@@ -2,22 +2,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/grisClaro"
+    android:gravity="clip_vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/grisClaro"
     tools:context=".RegistroBus" >
 
     <TextView
         android:id="@+id/tvBienvenida"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:textColor="@color/letraAzul1"
+        android:layout_centerHorizontal="true"
         android:text="@string/tvBienvenida"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/letraAzul1" />
 
     <EditText
         android:id="@+id/etApellidos"
@@ -41,47 +42,13 @@
         android:textColor="@color/letraAzul1"
          />
 
-    <TextView
-        android:id="@+id/tvPlacas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/etPlacas"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
-        android:text="@string/tvPlacas"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@color/letraAzul1" />
-
-    <EditText
-        android:id="@+id/etPlacas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/tvNombreConductor"
-        android:layout_alignLeft="@+id/tvPlacas"
-        android:layout_alignRight="@+id/tvPlacas"
-        android:layout_marginBottom="22dp"
-        android:ems="10"
-        android:inputType="text"/>
-
     <Spinner
         android:id="@+id/spinner1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
+        android:layout_alignLeft="@+id/tvNombreConductor"
         android:layout_below="@+id/tvBienvenida"
         android:layout_marginTop="26dp"
-        android:textColor="@color/letraAzul1" />
-
-    <TextView
-        android:id="@+id/tvRuta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/spinner1"
-        
-        android:layout_alignLeft="@+id/tvBienvenida"
-        android:layout_marginBottom="19dp"
-        android:text="@string/tvRuta"
-        android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/letraAzul1" />
 
     <EditText
@@ -96,12 +63,41 @@
         android:hint="@string/hintNombre" />
 
     <TextView
+        android:id="@+id/tvRuta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/spinner1"
+        android:layout_marginTop="21dp"
+        android:layout_toLeftOf="@+id/tvPlacas"
+        android:text="@string/tvRuta"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/letraAzul1" />
+
+    <EditText
+        android:id="@+id/etPlacas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tvPlacas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etPlacas"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tvPlacas"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/letraAzul1" />
+
+    <TextView
         android:id="@+id/tvNombreConductor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/etNombreConductor"
-        android:layout_alignRight="@+id/etPlacas"
-        android:layout_marginBottom="18dp"
+        android:layout_centerHorizontal="true"
         android:text="@string/tvNombreConductor"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/letraAzul1" />

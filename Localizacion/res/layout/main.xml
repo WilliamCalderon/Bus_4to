@@ -3,13 +3,17 @@
     
         android:orientation="vertical" 
  		android:layout_width="fill_parent" 
- 		android:layout_height="fill_parent" >
+ 		android:layout_height="fill_parent" 
+ 		android:background="@color/grisClaro"
+ 		>
 
    		<TextView android:id="@+id/LblPosicion" 
  		android:layout_width="fill_parent" 
  		android:layout_height="wrap_content" 
  		android:layout_margin="5dip" 
- 		android:text="Posición Actual:" /> 
+ 		android:text="Posición Actual:"
+ 		android:textColor="@color/letraAzul1"
+ 		 /> 
  
  		<TextView android:id="@+id/LblPosLatitud" 
  		android:layout_width="fill_parent" 
@@ -32,22 +36,21 @@
  		android:background="#aaaaaa" 
  		android:textColor="#000000" /> 
  
- 		<Button android:id="@+id/BtnActualizar" 
- 		android:layout_width="fill_parent" 
- 		android:layout_height="wrap_content" 
- 		android:text="Activar" />
-
  		<Button
- 		    android:id="@+id/BtnDesactivar"
- 		    android:layout_width="match_parent"
+ 		    android:id="@+id/BtnActualizar"
+ 		    android:layout_width="fill_parent"
  		    android:layout_height="wrap_content"
- 		    android:text="Desactivar" />
+ 		    android:layout_gravity="center_vertical"
+ 		    android:text="Activar"
+ 		    android:textColor="@color/letraAzul1" />
 		 
  		<TextView android:id="@+id/LblEst" 
  		android:layout_width="fill_parent" 
  		android:layout_height="wrap_content" 
  		android:layout_margin="5dip" 
- 		android:text="Estado proveedor:" />
+ 		android:text="Estado proveedor:" 
+ 		android:textColor="@color/letraAzul1"
+ 		/>
 
  		<TextView
  		    android:id="@+id/LblEstado"

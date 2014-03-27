@@ -17,37 +17,55 @@ import android.view.View;
 import android.view.View.OnClickListener; 
 import android.widget.Button; 
 import android.widget.TextView; 
+import org.example.MainLocalizacion.RegistroBus;
 
 public class MainLocalizacion extends Activity { 
 
 private Button btnActualizar; 
-private Button btnDesactivar; 
+//private Button btnDesactivar; 
 private TextView lblLatitud; 
 private TextView lblLongitud; 
 private TextView lblPrecision; 
 private TextView lblEstado; 
-
+String l = RegistroBus.getPlacas();
 private LocationManager locManager; 
 private LocationListener locListener; 
+private long Tiempo_Ini = 40000; //6 segundos
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-		btnActualizar = (Button)findViewById(R.id.BtnActualizar); 
-		btnDesactivar = (Button)findViewById(R.id.BtnDesactivar); 
+		btnActualizar = (Button)findViewById(R.id.BtnActualizar); 	
 		lblLatitud = (TextView)findViewById(R.id.LblPosLatitud); 
 		lblLongitud = (TextView)findViewById(R.id.LblPosLongitud); 
 		lblPrecision = (TextView)findViewById(R.id.LblPosPrecision); 
 		lblEstado = (TextView)findViewById(R.id.LblEstado); 
-		
+		 
 		btnActualizar.setOnClickListener(new OnClickListener() { 
 			 @Override 
-			 public void onClick(View v) { 
-			 comenzarLocalizacion(); 
+			 public void onClick(View v) {
+				  
+			      comenzarLocalizacion(); 
 			 } 
 			 }); 
-		
+		TimerTask task = new TimerTask() {
+
+			@Override
+			public void run() {
+				btnActualizar.setOnClickListener(new OnClickListener() { 
+					 @Override 
+					 public void onClick(View v) {
+						  
+					      comenzarLocalizacion(); 
+					 } 
+					 });
+				
+			}
+			
+		 };
+		Timer timer = new Timer();
+	    timer.schedule(task, Tiempo_Ini);//Pasado los 6 segundos dispara la tarea
 	}
 	
 	private void comenzarLocalizacion() 
@@ -96,11 +114,13 @@ private LocationListener locListener;
 			 
 			 lblLatitud.setText("Latitud: " + latitud); 
 			 lblLongitud.setText("Longitud: " + longitud); 
-			 lblPrecision.setText("Precision: " + String.valueOf(loc.getAccuracy())); 
+			 lblPrecision.setText("Precision: " + String.valueOf(loc.getAccuracy()) + "      Placas: "+RegistroBus.getPlacas()); 
 			 Log.i("", String.valueOf(loc.getLatitude() + " - " + String.valueOf(loc.getLongitude()))); 
 			 
 			 datos.add(latitud);
 			 datos.add(longitud);
+			 //
+			 datos.add(RegistroBus.getPlacas());
 			 llamada.execute(datos);
 			 //try {
 				//	UtilitComuncServer.enviaLocalizacion(latitud, longitud);
@@ -117,7 +137,7 @@ private LocationListener locListener;
 			 longitud="(sin_datos)";
 			 lblLatitud.setText("Latitud:" + latitud); 
 			 lblLongitud.setText("Longitud: "+longitud); 
-			 lblPrecision.setText("Precision: (sin_datos)"); 
+			 lblPrecision.setText("Precision: (sin_datos)"+ "      Placas: "+RegistroBus.getPlacas()); 
 		 } 
 		/*try {
 			UtilitComuncServer.enviaLocalizacion(latitud, longitud);

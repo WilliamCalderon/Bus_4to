@@ -39,18 +39,19 @@ public class UtilitComuncServer extends AsyncTask<ArrayList, Void, Void>{
      *
      */
 	
-	static void enviaLocalizacion (String latitud, String longitud) throws IOException{
+	static void enviaLocalizacion (String latitud, String longitud, String placas) throws IOException{
 		String serverUrl = SERVER_URL;
 		Map<String, String> params = new HashMap<String, String>();
 		params.put("latitud", latitud);
 		params.put("longitud", longitud);
+		params.put("placas", placas);
 		post(serverUrl, params);
 	}
 	
 	static void enviaRegistroBus (String _ruta, String _Placas, String _Nombre, String _Apellido) throws IOException{
 		String serverUrl = SERVER_URL;
 		Map<String, String> params = new HashMap<String, String>();
-		params.put("ruta", _ruta);
+		params.put("ruta", "1");//_ruta
 		params.put("placas", _Placas);
 		params.put("nombre", _Nombre);
 		params.put("apellido", _Apellido);
@@ -206,11 +207,12 @@ public class UtilitComuncServer extends AsyncTask<ArrayList, Void, Void>{
 				e.printStackTrace();
 			}
 			break;
-		case 2: //Envia Localizacion
+		case 3: //Envia Localizacion
 			String latitud = (String) arreglo.get(0);
 			String longitud = (String) arreglo.get(1);
+			String identificador =(String) arreglo.get(2);
 			try {
-				enviaLocalizacion(latitud, longitud);
+				enviaLocalizacion(latitud, longitud, identificador);
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
