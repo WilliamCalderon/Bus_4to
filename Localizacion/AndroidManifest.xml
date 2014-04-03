@@ -21,9 +21,10 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logo_negro_512"
+        android:icon="@drawable/negro"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+         >
         <activity
             android:name="org.example.MainLocalizacion.Pantalla_Inicio"
             android:label="@string/app_name"

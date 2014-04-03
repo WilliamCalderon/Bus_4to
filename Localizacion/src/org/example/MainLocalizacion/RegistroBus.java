@@ -52,8 +52,13 @@ public class RegistroBus extends Activity implements OnItemSelectedListener{
 				 
 				 //datos.add(spSentido.getSelectedItem().toString());
 				 //datos.add(etPlacas.getText().toString());
-				 
-				 Ruta=spSentido.getSelectedItem().toString();
+				 /*if(spSentido.getSelectedItemPosition() == 0){
+					 Ruta= Integer.toString(spSentido.getSelectedItemPosition()+18);//getSelectedItem().toString();
+				 }
+				 else if(spSentido.getSelectedItemPosition() == 1){
+					 Ruta= Integer.toString(spSentido.getSelectedItemPosition()-1);
+				 }*/
+				 Ruta= Integer.toString(spSentido.getSelectedItemPosition());
 				 Placas = etPlacas.getText().toString();
 				 Nombre = etNombre.getText().toString();
 				 Apellido = etApellido.getText().toString();
@@ -64,7 +69,7 @@ public class RegistroBus extends Activity implements OnItemSelectedListener{
 				 datos.add(Apellido);
 				 
 				 UtilitComuncServer llamada= new UtilitComuncServer();
-				 String r= getString(R.string.message).toString()+Ruta+" "+Placas+" "+Nombre+" "+Apellido;
+				 String r= getString(R.string.message).toString()+"La Ruta: "+Ruta+" "+Placas+" "+Nombre+" "+Apellido;
 				 Toast.makeText(
 							getApplicationContext(),
 							r,
@@ -80,6 +85,7 @@ public class RegistroBus extends Activity implements OnItemSelectedListener{
 	}
 	
 	public void Cargar_Sentido(){
+		
 		
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
 		        R.array.Sentido, android.R.layout.simple_spinner_item);            		 // Create an ArrayAdapter using the string array and a default spinner layout

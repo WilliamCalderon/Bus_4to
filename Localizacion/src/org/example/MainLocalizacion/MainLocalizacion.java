@@ -1,5 +1,7 @@
 package org.example.MainLocalizacion;
 
+
+
 import java.io.IOException;
 import java.util.*;
 
@@ -30,7 +32,7 @@ private TextView lblEstado;
 String l = RegistroBus.getPlacas();
 private LocationManager locManager; 
 private LocationListener locListener; 
-private long Tiempo_Ini = 40000; //6 segundos
+private long Tiempo_Ini = 35000; //40 segundos
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -58,14 +60,14 @@ private long Tiempo_Ini = 40000; //6 segundos
 					 public void onClick(View v) {
 						  
 					      comenzarLocalizacion(); 
-					 } 
-					 });
+					} 
+					});
 				
 			}
 			
 		 };
 		Timer timer = new Timer();
-	    timer.schedule(task, Tiempo_Ini);//Pasado los 6 segundos dispara la tarea
+	    timer.schedule(task, Tiempo_Ini);//Pasado los 40 segundos dispara la tarea
 	}
 	
 	private void comenzarLocalizacion() 

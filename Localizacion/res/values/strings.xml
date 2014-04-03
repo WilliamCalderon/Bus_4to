@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Localización</string>
-    <!--  <string name="action_settings">Settings</string>-->
+    <string name="app_name">Localizacion</string>
+    <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_pantalla__inicio">Pantalla_Inicio</string>
     <string name="title_activity_registro">Registro</string>
@@ -20,11 +20,51 @@
     <string name="hintNombre">Nombre (s)</string>
     <string name="hintApellidos">Apellidos (s)</string>
     <string name="btFinalizar">Finalizar</string>
-    <string name="message">Ha seleccionado: </string>
+    <string name="message">Ha seleccionado:  </string>
+    <string name= "Bienvenido"> Bienvenido </string>
     
 	
     <string-array name="Sentido">
-        <item>San Lazaro to Nativitas</item>
-        <item>Nativitas to San Lazaro</item>
+        <item>ESIME</item>
+        <item>1-D Metro Santa Martha - Mixcoac</item>
+        <item>9-C Centro Comercial Santa Fe - Tlacuitlapa/Puerta Grande</item>
+        <item>11 Aragón - Metro Chapultepec por la Villa</item>
+        <item>11-A Aragón - Metro Chapultepec por Av. 604</item>
+        <item>12 Aragón - Panteón San Isidro</item>
+        <item>13-A Metro Chapultepec - Torres de Padierna/Pegregal de San Nicolas</item>
+        <item>17-E Metro Universidad - San Pedro Martir por Carretera Federal</item>
+        <item>17-F Metro Tasqueña - San Pedro Martir por Fovisste</item>
+        <item>18 Metro Cuatro Caminos - Col. Moctezuma 2a. Sección</item>
+        <item>19 Metro el Rosario - Parque México por Cuitlahuac</item>
+        <item>19-A Metro el Rosario - Parque México por San Luis</item>
+        <item>23 Col- Tepetatal (El Charcho) - Metro la Raza</item>
+        <item>25 Zacatenco - Metro Potrero</item>
+        <item>27-A Reclusorio Norte - Metro Hidalgo/Alameda Central</item>
+        <item>33 León de los Aldama - Metro Chabacano</item>
+        <item>37 U.C.T.M. ATZACOALCO - Carmen Serdan</item>
+        <item>39 Metro San Lazaro - Carmen Serdan</item>
+        <item>39-A Metro San Lazaro - Xochimilco/Bosque de Nativitas por Cafetales</item>
+        <item >39-B Metro San Lazaro - Xochimilco/Bosque de Nativitas por Miramontes</item>
+        <item >43 San Felipe/León de los Aldama - Central de Abasto</item>
+        <item >46-C Lienzo Charro/Santa Martha - Central de Abasto</item>
+        <item >47-A Alameda Oriente - Xochimilco/Bosque de Nativitas</item>
+        <item >52-C Metro Santa Martha - Metro Zapata</item>
+        <item >57-A Metro Cuatro Caminos - Metro Constitución de 1917</item>
+        <item >57-C Metro Cuatro Caminos - Metro Constitución de 1917</item>
+        <item >59 Metro El Rosario - Metro Chapultepec</item>
+        <item >59-A Metro El Rosario - Sullivan</item>
+        <item >76 Centro Comercial Santa Fe - La Villa/Cantera por Palmas</item>
+        <item >76-A Centro Comercial Santa Fe - La Villa/Cantera por Reforma</item>
+        <item >101 Col. Lomas de Cuautepec - Metro Indios Verdes</item>
+        <item >101-A Ampliación Malacates - La Villa Ferroplaza</item>
+        <item >101-B Colonia Forestal - La Villa Ferroplaza</item>
+        <item >101-D Col. Cocoyotes(La Brecha) - La Villa Ferroplaza</item>
+        <item >102 Col. Cocoyotes(La Brecha) - Metro Indios Verdes</item>
+        <item >103 Ampliación Malacates - Metro la Raza</item>
+        <item >104 Col. El Tepetatal (El Charco) - Metro Potrero</item>
+        <item >107 Metro el Rosario - Metro Tacuba</item>
+        <item >107-B Metro Martín Carrera </item>
+        
+        
     </string-array>
 </resources>

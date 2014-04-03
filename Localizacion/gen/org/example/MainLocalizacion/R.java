@@ -30,30 +30,33 @@ public final class R {
         public static final int tamanoletra=0x7f040002;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int logo_negro_512=0x7f020001;
-        public static final int pantalla_inicio=0x7f020002;
+        public static final int degradado=0x7f020000;
+        public static final int ic_launcher=0x7f020001;
+        public static final int negro=0x7f020002;
+        public static final int pantalla_inicio=0x7f020003;
+        public static final int pantalla_inicio_bn=0x7f020004;
     }
     public static final class id {
-        public static final int BtnActualizar=0x7f0a000f;
-        public static final int LblEst=0x7f0a0010;
-        public static final int LblEstado=0x7f0a0011;
-        public static final int LblPosLatitud=0x7f0a000c;
-        public static final int LblPosLongitud=0x7f0a000d;
-        public static final int LblPosPrecision=0x7f0a000e;
-        public static final int LblPosicion=0x7f0a000b;
-        public static final int action_settings=0x7f0a0012;
-        public static final int button1=0x7f0a0004;
-        public static final int etApellidos=0x7f0a0003;
-        public static final int etNombreConductor=0x7f0a0005;
-        public static final int etPlacas=0x7f0a000a;
+        public static final int BtnActualizar=0x7f0a0010;
+        public static final int LblEst=0x7f0a0011;
+        public static final int LblEstado=0x7f0a0012;
+        public static final int LblPosLatitud=0x7f0a000d;
+        public static final int LblPosLongitud=0x7f0a000e;
+        public static final int LblPosPrecision=0x7f0a000f;
+        public static final int LblPosicion=0x7f0a000c;
+        public static final int action_settings=0x7f0a0013;
+        public static final int button1=0x7f0a0005;
+        public static final int etApellidos=0x7f0a0004;
+        public static final int etNombreConductor=0x7f0a0006;
+        public static final int etPlacas=0x7f0a0008;
         public static final int imageView1=0x7f0a0000;
         public static final int progressBar1=0x7f0a0001;
-        public static final int spinner1=0x7f0a0006;
-        public static final int tvBienvenida=0x7f0a0002;
-        public static final int tvNombreConductor=0x7f0a0007;
-        public static final int tvPlacas=0x7f0a0009;
-        public static final int tvRuta=0x7f0a0008;
+        public static final int spinner1=0x7f0a000a;
+        public static final int textView1=0x7f0a0002;
+        public static final int tvBienvenida=0x7f0a0003;
+        public static final int tvNombreConductor=0x7f0a0009;
+        public static final int tvPlacas=0x7f0a0007;
+        public static final int tvRuta=0x7f0a000b;
     }
     public static final class layout {
         public static final int activity_pantalla__inicio=0x7f030000;
@@ -67,6 +70,7 @@ public final class R {
         public static final int registro_bus=0x7f090003;
     }
     public static final class string {
+        public static final int Bienvenido=0x7f05000e;
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int btFinalizar=0x7f05000c;

@@ -51,7 +51,7 @@ public class UtilitComuncServer extends AsyncTask<ArrayList, Void, Void>{
 	static void enviaRegistroBus (String _ruta, String _Placas, String _Nombre, String _Apellido) throws IOException{
 		String serverUrl = SERVER_URL;
 		Map<String, String> params = new HashMap<String, String>();
-		params.put("ruta", "1");//_ruta
+		params.put("ruta", _ruta);//_ruta aqui mandamos la ruta
 		params.put("placas", _Placas);
 		params.put("nombre", _Nombre);
 		params.put("apellido", _Apellido);
